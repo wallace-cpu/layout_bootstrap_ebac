@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Projeto com Bootstrap</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    
+    <div id="imageCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#imageCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#imageCarousel" data-slide-to="1"></li>
+            <li data-target="#imageCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/car-7569896_640.jpg" class="d-block w-100" alt="Imagem 1">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/chevrolet-8647804_640.jpg" class="d-block w-100" alt="Imagem 2">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/shoes-6566418_640.jpg" class="d-block w-100" alt="Imagem 3">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#imageCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#imageCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+        </a>
+    </div>
+
+    
+    <div class="row mt-4">
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+                <img src="./dog_2.jpg" class="card-img-top" alt="Imagem do Card 1">
+                <div class="card-body">
+                    <h5 class="card-title">Título do Card 1</h5>
+                    <p class="card-text">Conteúdo do card 1.</p>
+                    <a href="#" class="btn btn-primary">Botão</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+                <img src="./dog_3.jpg" class="card-img-top" alt="Imagem do Card 2">
+                <div class="card-body">
+                    <h5 class="card-title">Título do Card 2</h5>
+                    <p class="card-text">Conteúdo do card 2.</p>
+                    <a href="#" class="btn btn-primary">Botão</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+                <img src="./duplo_dog.jpg" class="card-img-top" alt="Imagem do Card 3">
+                <div class="card-body">
+                    <h5 class="card-title">Título do Card 3</h5>
+                    <p class="card-text">Conteúdo do card 3.</p>
+                    <a href="#" class="btn btn-primary">Botão</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.carousel-inner').slick({
+            autoplay: true,
+            arrows: false
+        });
+    });
+</script>
+</body>
+</html>
